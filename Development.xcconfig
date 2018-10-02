@@ -1,0 +1,12 @@
+//
+//  Development.xcconfig
+//  RH-ShowMyExternalIP
+//
+//  Created by RCHO on 9/24/18.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+environment             = Development
+server_url              = https://showip.net/
