@@ -20,6 +20,18 @@ platform :ios do
     # Add task in here.
   end
 
+  desc "Create code signing certificate and provisioning profile."
+  lane :provision do
+    produce(
+        app_name: 'RH-ShowMyExternalIP',
+        language: 'English',
+        app_version: '1.3',
+        sku: 'HomeEdition'
+    )
+    cert
+    sigh(force: true)
+  end
+
   desc "Run all the unit tests and ui tests."
   lane :test do
     if is_ci
